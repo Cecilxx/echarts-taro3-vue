@@ -3,7 +3,6 @@ var fs = require("fs");
 var path = require("path");
 const { exec } = require("child_process");
 
-//解析需要遍历的文件夹，我这以E盘根目录为例
 var filePath = path.resolve("src/components");
 fileDisplay(filePath);
 
