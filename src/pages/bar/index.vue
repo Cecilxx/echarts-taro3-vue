@@ -9,12 +9,13 @@
 
 <script lang="js">
 import Taro from "@tarojs/taro";
-import EChart from '../../components/echart'
+import { EChart } from '../../components'
+
 export default {
   name: 'Bar',
   components: {EChart},
   mounted () {
-    const defautOption = {
+    const defaultOption = {
       xAxis: {
         type: 'category',
         data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
@@ -34,7 +35,7 @@ export default {
       ]
     }
     Taro.nextTick(() => {
-      this.$refs.vueref0.refresh(defautOption)
+      this.$refs.vueref0.refresh(defaultOption)
     })
   },
 }
