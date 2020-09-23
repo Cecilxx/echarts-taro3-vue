@@ -10,12 +10,7 @@
 import Taro from "@tarojs/taro";
 import * as echarts from '../ec-canvas/echarts'
 import EcCanvas from '../ec-canvas'
-function setChartData (chart, option) {
-  if (!option || typeof option !== 'object') {
-    console.error('设置echarts数据失败，option必传')
-  }
-  chart.setOption(option)
-}
+
 export default {
   name: 'BaseChart',
   components: {EcCanvas},
@@ -45,7 +40,8 @@ export default {
           height: height,
           devicePixelRatio: canvasDpr
         })
-        setChartData(chart, data)
+        canvas.setChart(chart);
+        chart.setOption(data);
         return chart
       })
     }
