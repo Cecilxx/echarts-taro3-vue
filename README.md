@@ -43,7 +43,7 @@ npm i echarts-taro3-vue
 
 <script lang="js">
 import Taro from "@tarojs/taro";
-import { EChart } from '../../components'
+import { EChart } from 'echarts-taro3-vue'
 
 export default {
   name: 'Bar',
@@ -96,7 +96,7 @@ export default {
 
 <script lang="js">
 import Taro from "@tarojs/taro";
-import { EChart } from '../../components'
+import { EChart } from 'echarts-taro3-vue'
 export default {
   name: 'Gauge',
   components: {EChart},
